@@ -21,17 +21,18 @@ body {
 }
 
 .main {
-  position: relative;
   background-color: hsl(217, 54%, 11%);
   height: 100vh;
   width: auto;
+  overflow: hidden;
 }
 
 .main__card {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  margin: 5rem auto;
+  /* top: 15%;
+  left: 50%; */
+  /* transform: translateX(-50%); */
 }
 
 .card {
@@ -42,12 +43,37 @@ body {
   border-radius: 1rem;
 }
 
-.card__image {
+.card__img {
+  position: relative;
+  margin: 1rem auto;
+  background-image: url(../images/image-equilibrium.jpg);
   width: 85%;
-  height: auto;
-  margin-top: 1.5rem;
+  height: 0; /* to make same as width */
+  padding-bottom: 85%; /* to make same as width */
+  background-size: 100%;
   border-radius: 0.5rem;
-  align-self: center;
+}
+
+.card__img:hover {
+  background-image: linear-gradient(
+      to right,
+      hsla(178, 100%, 50%, 0.5),
+      hsla(178, 100%, 50%, 0.5)
+    ),
+    url(../images/image-equilibrium.jpg);
+  cursor: pointer;
+}
+
+.card__img:hover .card__icon {
+  opacity: 1;
+}
+
+.card__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 .card__coin-info {
@@ -111,9 +137,6 @@ body {
   border-radius: 50%;
 }
 
-.creation__img:hover {
-}
-
 .creation__text {
   color: hsl(215, 51%, 70%);
   font-size: 0.9rem;
@@ -122,4 +145,8 @@ body {
 .creation__text--highlight {
   color: hsl(0, 0%, 100%);
   font-weight: 400;
+}
+
+.footer {
+  margin: 2rem auto;
 }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .main__attribution {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: hsl(0, 0%, 100%);
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <figure class="card main__card flexbox-column">
+        <img
+          src="images/image-equilibrium.jpg"
+          alt="main image of Equilibrium"
+          class="card__image"
+        />
+        <div class="description flexbox-column">
+          <h1 class="description__title header1">Equilibrium #3429</h1>
+          <p class="description__detail">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+          <div class="coin-info card__coin-info">
+            <div class="coin-info__detail coin-info__detail--highlight">
+              <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                  fill="#00FFF8"
+                />
+              </svg>
+              0.041 ETH
+            </div>
+            <div class="coin-info__detail">
+              <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                  fill="#8BACD9"
+                />
+              </svg>
+              3 days left
+            </div>
+          </div>
+        </div>
+        <div class="creation card__creation">
+          <img
+            class="creation__img"
+            src="./images/image-avatar.png"
+            alt="Person who create this card"
+          />
+          <div class="creation__text">
+            Creation of
+            <span class="creation__text creation__text--highlight"
+              >Jules Wyvern</span
+            >
+          </div>
+        </div>
+      </figure>
+
+      <div class="attribution main__attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Sangjun Park</a>.
+      </div>
+    </main>
+  </body>
+</html>

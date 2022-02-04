@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.header1 {
+  font-size: 1.3rem;
+}
+
+.flexbox-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  position: relative;
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  width: auto;
+}
+
+.main__card {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card {
+  align-items: center;
+  background-color: hsl(216, 50%, 16%);
+  width: 20rem;
+  height: 34rem;
+  border-radius: 1rem;
+}
+
+.card__image {
+  width: 85%;
+  height: auto;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  align-self: center;
+}
+
+.card__coin-info {
+  margin-bottom: 1rem;
+}
+
+.card__creation {
+  border-top: 1px solid hsla(215, 52%, 70%, 0.2);
+}
+
+.description {
+  align-self: center;
+  width: 85%;
+}
+
+.description__title {
+  align-self: flex-start;
+  margin: 1.5rem 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.description__detail {
+  color: hsl(215, 51%, 70%);
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+  line-height: 1.5;
+}
+
+.coin-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coin-info__detail {
+  display: flex;
+  text-align: center;
+  gap: 0.3rem;
+  color: hsl(215, 51%, 70%);
+  font-size: 1rem;
+}
+
+.coin-info__detail--highlight {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.creation {
+  width: 85%;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.creation__img {
+  height: 2rem;
+  width: auto;
+  margin-right: 0.8rem;
+  border: 1px solid hsl(215, 51%, 70%);
+  border-radius: 50%;
+}
+
+.creation__img:hover {
+}
+
+.creation__text {
+  color: hsl(215, 51%, 70%);
+  font-size: 0.9rem;
+}
+
+.creation__text--highlight {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}

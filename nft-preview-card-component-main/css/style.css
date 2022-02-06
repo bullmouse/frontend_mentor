@@ -32,7 +32,6 @@ body {
 }
 
 .card {
-  align-items: center;
   background-color: hsl(216, 50%, 16%);
   width: 20rem;
   height: 34rem;
@@ -71,7 +70,6 @@ body {
 }
 
 .card__img:hover {
-  opacity: 1;
   cursor: pointer;
 }
 
@@ -139,6 +137,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: start;
+  align-self: center;
 }
 
 .creation__img {
